@@ -1,18 +1,17 @@
-import { BrowserRouter, Routes,Route } from "react-router-dom"; // Import BrowserRouter
-import Navbar from "./Components/Navbar/Navbar"; // Import Navbar component
-import HeroSection from "./Components/Hero/HeroSection";
-import About from "./Pages/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home";
-// import Cources from "./Components/Cources";
-
+import About from "./Pages/About";
+import Courses from "./Components/Courses";
 
 function App() {
   return (
-    <BrowserRouter> {/* Wrap everything inside Router */}
-      <Navbar/>
+    <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
       </Routes>
     </BrowserRouter>
   );

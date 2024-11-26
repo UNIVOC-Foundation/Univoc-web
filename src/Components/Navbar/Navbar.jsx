@@ -12,6 +12,7 @@ export default function Navbar() {
   return (
     <nav className="bg-[#f5f5f7] text-[#1d1d1f]">
       <div className="max-w-[980px] mx-auto px-4 lg:px-0">
+        {/* Top Navigation */}
         <div className="h-[44px] flex items-center justify-between text-xs font-normal">
           {/* Logo Section */}
           <Link to="/" className="text-2xl flex items-center space-x-2">
@@ -22,21 +23,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <Link to="/about" className="hover:text-gray-500">ABOUT US</Link>
-            <div className="relative group">
-              <Link to="/Cources" className="hover:text-gray-500 flex items-center">
-                COURSES
-              </Link>
-            </div>
-            <div className="relative group">
-              <Link to="/jobsection" className="hover:text-gray-500 flex items-center">
-                JOB SECTION
-              </Link>
-            </div>
-            <div className="relative group">
-              <Link to="/studentlife" className="hover:text-gray-500 flex items-center">
-                STUDENT LIFE
-              </Link>
-            </div>
+            <Link to="/courses" className="hover:text-gray-500">COURSES</Link>
+            <Link to="/jobsection" className="hover:text-gray-500">JOB SECTION</Link>
+            <Link to="/studentlife" className="hover:text-gray-500">STUDENT LIFE</Link>
             <div className="relative group">
               <Link to="/innovation" className="hover:text-gray-500 flex items-center">
                 INNOVATION <ChevronDown className="w-4 h-4 ml-1" />
@@ -52,13 +41,20 @@ export default function Navbar() {
             <button aria-label="Saved Colleges" className="hover:text-gray-500">
               <ShoppingBag className="w-4 h-4" />
             </button>
+            <button
+              aria-label="Toggle Menu"
+              onClick={toggleMenu}
+              className="lg:hidden hover:text-gray-500"
+            >
+              <ChevronDown className="w-4 h-4" />
+            </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden bg-white py-2 px-4 space-y-2">
-            <Link to="/" className="block py-2 hover:text-gray-500">ABOUT US</Link>
+            <Link to="/about" className="block py-2 hover:text-gray-500">ABOUT US</Link>
             <Link to="/courses" className="block py-2 hover:text-gray-500">COURSES</Link>
             <Link to="/jobsection" className="block py-2 hover:text-gray-500">JOB SECTION</Link>
             <Link to="/studentlife" className="block py-2 hover:text-gray-500">STUDENT LIFE</Link>
