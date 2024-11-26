@@ -21,7 +21,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className="hover:text-gray-500">ABOUT US</Link>
+            <Link to="/about" className="hover:text-gray-500">ABOUT US</Link>
             <div className="relative group">
               <Link to="/Cources" className="hover:text-gray-500 flex items-center">
                 COURSES
