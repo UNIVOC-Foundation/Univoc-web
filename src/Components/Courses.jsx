@@ -171,7 +171,8 @@ const Courses = () => {
         </div>
       </div>
     </div>
-  );
+  
+);
 };
 
 export default Courses;

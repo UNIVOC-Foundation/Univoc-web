@@ -5,12 +5,12 @@ import SocialIcons from './SocialIcons';
 
 function Footer() {
     return (
-        <footer className="footer">
-            <div className="footer-container">
+        <footer className="footer ">
+            <div className="footer-container pointer-events-auto">
                 {/* Left Section */}
                 <div className="footer-left">
-                    <h4>INSTITUTE OF INNOVATION</h4>
-                    <p>Powered by PhysicsWallah</p>
+                    <h4 >INSTITUTE OF INNOVATION</h4>
+                    <p>Powered by Univoc Foundation</p>
                     <p>Unlock your potential in the world of Management and Technology</p>
                     <SocialIcons />
                 </div>
@@ -21,7 +21,7 @@ function Footer() {
                     <FooterItem title="School Of Management" />
                     <FooterItem title="School Of Technology" />
                 </div>
-             <div className="footer-bottom">
+             <div className="flex  footer-bottom">
             <a href='https://twitter.com/?lang=en'>
          <svg
            xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ function Footer() {
              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
          </svg>
        </a>
-       <a href='https://m.facebook.com/' className='hover:'>
+       <a href='https://m.facebook.com/'className='hower:blue'>
          <svg
            xmlns="http://www.w3.org/2000/svg"
            width="24"
