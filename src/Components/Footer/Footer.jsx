@@ -17,7 +17,7 @@ function Footer() {
 
                 {/* Right Section */}
                 <div className="footer-right">
-                    <h4>PW IOI Schools</h4>
+                    <h4>UNIVOC IOI Schools</h4>
                     <FooterItem title="School Of Management" />
                     <FooterItem title="School Of Technology" />
                 </div>
