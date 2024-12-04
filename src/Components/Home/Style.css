@@ -1,0 +1,21 @@
+/* Container overflow control */
+.overflow-hidden {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Smooth slide animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+  
