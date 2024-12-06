@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react";
 
+
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Array of image objects with profession labels
   const images = [
     {
-      url: "/placeholder.svg?height=600&width=1200",
+      url:"/placeholder.svg?height=600&width=1200", // Use the imported local image directly
       alt: "Chef in professional kitchen",
       profession: "Culinary Arts",
     },
@@ -60,7 +61,11 @@ export default function HomePage() {
             <img
               src={image.url}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="object-cover mx-auto"
+              style={{
+                width: "1200px", // Explicit width
+                height: "600px", // Explicit height
+              }}
             />
           </div>
         ))}

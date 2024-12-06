@@ -17,7 +17,9 @@ function About() {
             <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
               About UNIVOC
             </span>
-            <span className="text-gray-700">: Empowering Through Education</span>
+            <span className="text-gray-700">
+              : Empowering Through Education
+            </span>
           </h1>
         </div>
 
@@ -28,15 +30,25 @@ function About() {
             data-aos="fade-right"
             className="bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 shadow-lg"
             style={{
-              background: 'linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)',
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
             }}
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">About UNIVOC</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              About UNIVOC
+            </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              UNIVOC is dedicated to setting global standards in vocational education and integrating industry needs. As a fast-growing provider of skilling and manpower solutions in India, we focus on equipping individuals with the skills necessary for today's job market.
+              UNIVOC is dedicated to setting global standards in vocational
+              education and integrating industry needs. As a fast-growing
+              provider of skilling and manpower solutions in India, we focus on
+              equipping individuals with the skills necessary for today's job
+              market.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Our team of outsourcing industry experts ensures our programs are both <span className="text-red-500 font-semibold">practical and aligned with real-world demands.</span>
+              Our team of outsourcing industry experts ensures our programs are
+              both{" "}
+              <span className="text-red-500 font-semibold">
+                practical and aligned with real-world demands.
+              </span>
             </p>
           </div>
 
@@ -45,15 +57,19 @@ function About() {
             data-aos="fade-left"
             className="bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 shadow-lg"
             style={{
-              background: 'linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)',
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
             }}
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Us?</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Our client-centric approach sets us apart. We take the time to deeply understand each client's unique challenges and needs.
+              Our client-centric approach sets us apart. We take the time to
+              deeply understand each client's unique challenges and needs.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Feel the difference with personalized solutions and dedicated service at <span className="text-red-500 font-semibold">Hanover</span> and <span className="text-red-500 font-semibold">Tyke.</span>
+              Feel the difference with personalized solutions and dedicated
+              service at{" "}
+              <span className="text-red-500 font-semibold">Hanover</span> and{" "}
+              <span className="text-red-500 font-semibold">Tyke.</span>
             </p>
           </div>
 
@@ -62,16 +78,34 @@ function About() {
             data-aos="fade-right"
             className="bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 shadow-lg lg:col-span-2"
             style={{
-              background: 'linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)',
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
             }}
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Objective</h2>
             <ul className="text-gray-600 leading-relaxed list-disc list-inside space-y-2">
-              <li>To facilitate and create a pool of qualified job-ready resources.</li>
-              <li>To provide flexibility to students by means of pre-defined single/multiple entry and multiple exit points.</li>
-              <li>To ensure adequate knowledge and skills for making students work-ready at each exit point of the program.</li>
-              <li>To address the issues of unemployment and Industry requirements in the state through a meaningful industry-academia partnership by adopting Dual System of training.</li>
-              <li>To integrate NSQF and international specifications within the undergraduate level of higher education in order to enhance employability of the graduates in meeting global workforce requirements.</li>
+              <li>
+                To facilitate and create a pool of qualified job-ready
+                resources.
+              </li>
+              <li>
+                To provide flexibility to students by means of pre-defined
+                single/multiple entry and multiple exit points.
+              </li>
+              <li>
+                To ensure adequate knowledge and skills for making students
+                work-ready at each exit point of the program.
+              </li>
+              <li>
+                To address the issues of unemployment and Industry requirements
+                in the state through a meaningful industry-academia partnership
+                by adopting Dual System of training.
+              </li>
+              <li>
+                To integrate NSQF and international specifications within the
+                undergraduate level of higher education in order to enhance
+                employability of the graduates in meeting global workforce
+                requirements.
+              </li>
             </ul>
           </div>
 
@@ -80,12 +114,15 @@ function About() {
             data-aos="fade-right"
             className="bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 shadow-lg"
             style={{
-              background: 'linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)',
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
             }}
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Vision</h2>
             <p className="text-gray-600 leading-relaxed">
-              Expand access to work-integrated education on a broad scale, developing job-ready programs that create meaningful career opportunities for individuals across diverse social and geographic backgrounds.
+              Expand access to work-integrated education on a broad scale,
+              developing job-ready programs that create meaningful career
+              opportunities for individuals across diverse social and geographic
+              backgrounds.
             </p>
           </div>
 
@@ -94,12 +131,13 @@ function About() {
             data-aos="fade-left"
             className="bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 shadow-lg"
             style={{
-              background: 'linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)',
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
             }}
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Mission</h2>
             <p className="text-gray-600 leading-relaxed">
-              Commit to empowering youth through skill-integrated education that enhances employability and nurtures entrepreneurship.
+              Commit to empowering youth through skill-integrated education that
+              enhances employability and nurtures entrepreneurship.
             </p>
           </div>
         </div>
