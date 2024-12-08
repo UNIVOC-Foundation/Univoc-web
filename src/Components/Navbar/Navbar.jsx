@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* Top Navigation */}
         <div className="h-[44px] flex items-center justify-between">
           {/* Logo Section */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/HomePage" className="flex items-center space-x-2">
             <GraduationCap className="w-5 h-5" />
             <span className="font-bold text-lg">UNIVOC</span>
           </Link>
