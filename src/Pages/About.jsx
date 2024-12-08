@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Css/About.css";
 import image from "../Components/Images/3dc47f30-3ee7-11ef-ad24-fdf8ff2fca7f.jpg";
+import Footer from "../Components/Footer/Footer";
 
 function About() {
   useEffect(() => {
@@ -124,6 +125,7 @@ function About() {
             </p>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

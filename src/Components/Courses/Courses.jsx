@@ -21,7 +21,8 @@ const Courses = () => {
       level: "Beginner",
       price: 399,
       monthlyPrice: 33.25,
-      image: "/placeholder1.svg?height=600&width=800",
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKwOZt6QucFRrnZRdVJXN7DT3yf5rARHNHQ&s",
+      //image: "/placeholder1.svg?height=600&width=800",
       instructor: "Jane Smith",
       rating: 4.8,
       totalReviews: 245,
@@ -44,7 +45,8 @@ const Courses = () => {
       level: "Intermediate",
       price: 499,
       monthlyPrice: 41.58,
-      image: "/placeholder2.svg?height=600&width=800",
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbsHnPGRiZce93W1PNpQ960Pgkt1qE407Ww&s",
+      //image: "/placeholder2.svg?height=600&width=800",
       instructor: "John Doe",
       rating: 4.9,
       totalReviews: 189,
@@ -67,7 +69,152 @@ const Courses = () => {
       level: "Advanced",
       price: 599,
       monthlyPrice: 49.92,
-      image: "/placeholder3.svg?height=600&width=800",
+      image:"https://starinfotechcollege.com/wp-content/uploads/2024/11/mr1.jpg",
+      //image: "/placeholder3.svg?height=600&width=800",
+      instructor: "Alice Johnson",
+      rating: 4.7,
+      totalReviews: 156,
+    },
+    {
+      id: "4",
+      title: "Full-Stack JavaScript",
+      description: "Become a full-stack developer with JavaScript",
+      fullDescription: `Master both front-end and back-end development using JavaScript technologies.
+
+      What you'll learn:
+      - Node.js and Express.js
+      - MongoDB and Mongoose
+      - RESTful API design
+      - Authentication and authorization
+      - Real-time applications with Socket.io
+      - Deployment and DevOps basics`,
+      duration: "16 weeks",
+      students: 980,
+      level: "Advanced",
+      price: 599,
+      monthlyPrice: 49.92,
+      image:"https://starinfotechcollege.com/wp-content/uploads/2024/11/mr1.jpg",
+      //image: "/placeholder3.svg?height=600&width=800",
+      instructor: "Alice Johnson",
+      rating: 4.7,
+      totalReviews: 156,
+    },
+    {
+      id: "5",
+      title: "Full-Stack JavaScript",
+      description: "Become a full-stack developer with JavaScript",
+      fullDescription: `Master both front-end and back-end development using JavaScript technologies.
+
+      What you'll learn:
+      - Node.js and Express.js
+      - MongoDB and Mongoose
+      - RESTful API design
+      - Authentication and authorization
+      - Real-time applications with Socket.io
+      - Deployment and DevOps basics`,
+      duration: "16 weeks",
+      students: 980,
+      level: "Advanced",
+      price: 599,
+      monthlyPrice: 49.92,
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbsHnPGRiZce93W1PNpQ960Pgkt1qE407Ww&s",
+     // image: "/placeholder3.svg?height=600&width=800",
+      instructor: "Alice Johnson",
+      rating: 4.7,
+      totalReviews: 156,
+    },
+    {
+      id: "6",
+      title: "Full-Stack JavaScript",
+      description: "Become a full-stack developer with JavaScript",
+      fullDescription: `Master both front-end and back-end development using JavaScript technologies.
+
+      What you'll learn:
+      - Node.js and Express.js
+      - MongoDB and Mongoose
+      - RESTful API design
+      - Authentication and authorization
+      - Real-time applications with Socket.io
+      - Deployment and DevOps basics`,
+      duration: "16 weeks",
+      students: 980,
+      level: "Advanced",
+      price: 599,
+      monthlyPrice: 49.92,
+      //image: "/placeholder3.svg?height=600&width=800",
+      image:"https://starinfotechcollege.com/wp-content/uploads/2024/11/mr1.jpg",
+      instructor: "Alice Johnson",
+      rating: 4.7,
+      totalReviews: 156,
+    },
+    {
+      id: "7",
+      title: "Web Development Fundamentals",
+      description: "Master the basics of web development with HTML, CSS, and JavaScript",
+      fullDescription: `Learn the essential skills needed to become a web developer. This comprehensive course covers everything from basic HTML and CSS to advanced JavaScript concepts.
+
+      What you'll learn:
+      - HTML5 and semantic markup
+      - CSS3 and modern layouts
+      - JavaScript fundamentals
+      - Responsive design principles
+      - Basic web accessibility
+      - Version control with Git`,
+      duration: "12 weeks",
+      students: 1500,
+      level: "Beginner",
+      price: 399,
+      monthlyPrice: 33.25,
+      image:"https://starinfotechcollege.com/wp-content/uploads/2024/11/mr1.jpg",
+      //image: "/placeholder1.svg?height=600&width=800",
+      instructor: "Jane Smith",
+      rating: 4.8,
+      totalReviews: 245,
+    },
+    {
+      id: "8",
+      title: "Advanced React Development",
+      description: "Take your React skills to the next level",
+      fullDescription: `Dive deep into advanced React concepts and build complex applications with confidence.
+
+      What you'll learn:
+      - Advanced state management with Redux
+      - React Hooks in-depth
+      - Server-side rendering with Next.js
+      - Performance optimization techniques
+      - Testing React applications
+      - Deploying React apps at scale`,
+      duration: "10 weeks",
+      students: 1200,
+      level: "Intermediate",
+      price: 499,
+      monthlyPrice: 41.58,
+     image:"https://i.ytimg.com/vi/w7ejDZ8SWv8/sddefault.jpg",
+      // image: "/placeholder2.svg?height=600&width=800",
+      instructor: "John Doe",
+      rating: 4.9,
+      totalReviews: 189,
+    },
+    {
+      id: "9",
+      title: "Full-Stack JavaScript",
+      description: "Become a full-stack developer with JavaScript",
+      fullDescription: `Master both front-end and back-end development using JavaScript technologies.
+
+      What you'll learn:
+      - Node.js and Express.js
+      - MongoDB and Mongoose
+      - RESTful API design
+      - Authentication and authorization
+      - Real-time applications with Socket.io
+      - Deployment and DevOps basics`,
+      duration: "16 weeks",
+      students: 980,
+      level: "Advanced",
+      price: 599,
+      monthlyPrice: 49.92,
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbsHnPGRiZce93W1PNpQ960Pgkt1qE407Ww&s",
+      //image: "/placeholder3.svg?height=600&width=800",
       instructor: "Alice Johnson",
       rating: 4.7,
       totalReviews: 156,
@@ -171,7 +318,8 @@ const Courses = () => {
         </div>
       </div>
     </div>
-  );
+  
+);
 };
 
 export default Courses;
