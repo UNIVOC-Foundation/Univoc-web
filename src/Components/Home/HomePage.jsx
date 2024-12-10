@@ -88,14 +88,14 @@ export default function HomePage() {
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
         aria-label="Previous slide"
       >
-        <FiChevronLeft className="w-6 h-6 text-white" />
+       
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
         aria-label="Next slide"
       >
-        <FiChevronRight className="w-6 h-6 text-white" />
+     
       </button>
 
       {/* Content Overlay */}
