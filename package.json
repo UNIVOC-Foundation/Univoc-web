@@ -15,10 +15,17 @@
     "@mui/material": "^6.1.8",
     "aos": "^2.3.4",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "framer-motion": "^11.13.1",
 =======
     "framer-motion": "^11.13.5",
 >>>>>>> 8b6ea73 (Home Page Updated)
+=======
+    "framer-motion": "^11.13.5",
+=======
+    "framer-motion": "^11.13.1",
+>>>>>>> e4c9358 (add pages)
+>>>>>>> ed4e689 (add pages)
     "gsap": "^3.12.5",
     "lucide-react": "^0.451.0",
     "react": "^18.3.1",
