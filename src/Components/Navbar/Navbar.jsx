@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Search, GraduationCap } from "lucide-react";
+import { Search, ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,106 +9,84 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const linkStyles = "text-sm font-medium hover:text-gray-200";
-
   return (
-    <nav className="bg-blue-600 text-white font-sans">
-      <div className="max-w-[980px] mx-auto px-4 lg:px-0">
-        {/* Top Navigation */}
-        <div className="h-[44px] flex items-center justify-between">
+    <nav className="bg-[#0088E5] text-white font-sans">
+      <div className="max-w-[1200px] mx-auto px-4">
+        {/* Main Navigation */}
+        <div className="h-[70px] flex items-center justify-between">
           {/* Logo Section */}
           <Link to="/HomePage" className="flex items-center space-x-2">
-            <GraduationCap className="w-5 h-5" />
-            <span className="font-bold text-lg">UNIVOC</span>
+            {/* Placeholder for logo */}
+            <div className="h-8 w-8 bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-700">
+              LOGO
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/HomePage" className={linkStyles}>
+            <Link to="/HomePage" className="text-white hover:text-gray-200 font-medium">
               HOME
             </Link>
-            <Link to="/about" className={linkStyles}>
+            <Link to="/about" className="text-white hover:text-gray-200 font-medium">
               ABOUT US
             </Link>
-            <Link to="/courses" className={linkStyles}>
-              COURSES
-            </Link>
-            <Link to="/jobsection" className={linkStyles}>
-              HR SECTION
-            </Link>
-            <Link to="/Contact" className={linkStyles}>
-              CONTACT US
+            <div className="relative group">
+              <Link to="/services" className="text-white hover:text-gray-200 font-medium flex items-center">
+                OUR SERVICES <ChevronDown className="ml-1 w-4 h-4" />
+              </Link>
+            </div>
+            <div className="relative group">
+              <Link to="/courses" className="text-white hover:text-gray-200 font-medium flex items-center">
+                COURSES <ChevronDown className="ml-1 w-4 h-4" />
+              </Link>
+            </div>
+            <div className="relative group">
+              <Link to="/jobsection" className="text-white hover:text-gray-200 font-medium flex items-center">
+                JOB <ChevronDown className="ml-1 w-4 h-4" />
+              </Link>
+            </div>
+            <Link to="/Contact" className="text-white hover:text-gray-200 font-medium">
+              CONTACT
             </Link>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex items-center space-x-4">
-            <button aria-label="Search" className={linkStyles}>
-              <Search className="w-4 h-4" />
-            </button>
-            <Link
-              to="/Login"
-              className="bg-white text-blue-600 font-medium px-4 py-1 rounded hover:bg-blue-500 hover:text-white transition"
-            >
-              Login
-            </Link>
-            <Link
-              to="/signup"
-              className="bg-blue-700 text-white font-medium px-4 py-1 rounded hover:bg-blue-500 transition"
-            >
-              Signup
-            </Link>
-            <button
-              aria-label="Toggle Menu"
-              onClick={toggleMenu}
-              className="lg:hidden hover:text-gray-200"
-            ></button>
-          </div>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="lg:hidden text-white p-2"
+            aria-label="Toggle Menu"
+          >
+            <div className="w-6 h-0.5 bg-current mb-1.5"></div>
+            <div className="w-6 h-0.5 bg-current mb-1.5"></div>
+            <div className="w-6 h-0.5 bg-current"></div>
+          </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white py-2 px-4 space-y-2 text-black">
-            <Link to="/HomePage" className={linkStyles}>
-              HomePage
-            </Link>
-            <Link to="/about" className={linkStyles}>
-              ABOUT US
-            </Link>
-            <Link to="/courses" className={linkStyles}>
-              COURSES
-            </Link>
-            <Link to="/jobsection" className={linkStyles}>
-              JOB SECTION
-            </Link>
-            <Link to="/studentlife" className={linkStyles}>
-              STUDENT LIFE
-            </Link>
-            <div className="flex flex-col space-y-2">
-              <Link
-                to="/Login"
-                className="bg-blue-600 text-white font-medium text-center py-2 rounded hover:bg-blue-500"
-              >
-                Login
+          <div className="lg:hidden bg-white py-4 px-4 absolute top-[70px] left-0 right-0 z-50">
+            <div className="flex flex-col space-y-4">
+              <Link to="/HomePage" className="text-blue-600 hover:text-blue-800 font-medium">
+                HOME
               </Link>
-              <Link
-                to="/signup"
-                className="bg-blue-700 text-white font-medium text-center py-2 rounded hover:bg-blue-500"
-              >
-                Signup
+              <Link to="/about" className="text-blue-600 hover:text-blue-800 font-medium">
+                ABOUT US
+              </Link>
+              <Link to="/services" className="text-blue-600 hover:text-blue-800 font-medium">
+                OUR SERVICES
+              </Link>
+              <Link to="/courses" className="text-blue-600 hover:text-blue-800 font-medium">
+                COURSES
+              </Link>
+              <Link to="/jobsection" className="text-blue-600 hover:text-blue-800 font-medium">
+                JOB
+              </Link>
+              <Link to="/Contact" className="text-blue-600 hover:text-blue-800 font-medium">
+                CONTACT
               </Link>
             </div>
           </div>
         )}
-
-        {/* Promo Section */}
-        <div className="mt-4 text-center bg-white-700">
-          Navigate your future with confidence. Find your perfect course match
-          today!{" "}
-          <Link to="/explore" className="text-blue-200 hover:underline">
-            Explore now &gt;
-          </Link>
-        </div>
       </div>
     </nav>
   );
