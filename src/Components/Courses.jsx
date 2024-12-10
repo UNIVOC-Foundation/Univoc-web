@@ -73,6 +73,144 @@ const Courses = () => {
       rating: 4.7,
       totalReviews: 156,
     },
+    {
+      id: "4",
+      title: "B.Voc in Digital Marketing",
+      description: "Master the art of online marketing and brand promotion",
+      fullDescription: `Learn to create and execute effective digital marketing strategies in this comprehensive course.
+
+      What you'll learn:
+      - Social media marketing
+      - Search engine optimization (SEO)
+      - Content marketing
+      - Email marketing
+      - Pay-per-click advertising
+      - Analytics and data interpretation`,
+      duration: "3 years",
+      students: 1350,
+      level: "Undergraduate",
+      price: 449,
+      monthlyPrice: 37.42,
+      image: "/placeholder4.svg?height=600&width=800",
+      instructor: "Prof. Sarah Brown",
+      rating: 4.8,
+      totalReviews: 210,
+    },
+    {
+      id: "5",
+      title: "B.Voc in Culinary Arts",
+      description: "Become a master chef and culinary innovator",
+      fullDescription: `Develop your culinary skills and creativity in this hands-on program focused on global cuisines and innovative cooking techniques.
+
+      What you'll learn:
+      - Classical and modern cooking techniques
+      - Menu planning and development
+      - Food safety and sanitation
+      - Nutrition and dietary considerations
+      - Restaurant management
+      - Food styling and presentation`,
+      duration: "3 years",
+      students: 890,
+      level: "Undergraduate",
+      price: 549,
+      monthlyPrice: 45.75,
+      image: "/placeholder5.svg?height=600&width=800",
+      instructor: "Chef Michael Lee",
+      rating: 4.9,
+      totalReviews: 178,
+    },
+    {
+      id: "6",
+      title: "B.Voc in Fashion Design",
+      description: "Create cutting-edge designs and shape the future of fashion",
+      fullDescription: `Explore your creativity and learn the technical skills needed to succeed in the dynamic world of fashion design.
+
+      What you'll learn:
+      - Fashion illustration and technical drawing
+      - Textile science and fabric manipulation
+      - Pattern making and garment construction
+      - Fashion history and trend forecasting
+      - Computer-aided design (CAD) for fashion
+      - Fashion marketing and branding`,
+      duration: "3 years",
+      students: 1100,
+      level: "Undergraduate",
+      price: 499,
+      monthlyPrice: 41.58,
+      image: "/placeholder6.svg?height=600&width=800",
+      instructor: "Prof. Emily Chen",
+      rating: 4.7,
+      totalReviews: 195,
+    },
+    {
+      id: "7",
+      title: "B.Voc in Renewable Energy Technology",
+      description: "Pioneer sustainable energy solutions for a greener future",
+      fullDescription: `Gain expertise in various renewable energy technologies and learn to design and implement sustainable energy systems.
+
+      What you'll learn:
+      - Solar photovoltaic systems
+      - Wind energy technology
+      - Hydroelectric power systems
+      - Biomass and biofuel production
+      - Energy storage solutions
+      - Smart grid technologies`,
+      duration: "3 years",
+      students: 750,
+      level: "Undergraduate",
+      price: 599,
+      monthlyPrice: 49.92,
+      image: "/placeholder7.svg?height=600&width=800",
+      instructor: "Dr. Robert Green",
+      rating: 4.8,
+      totalReviews: 132,
+    },
+    {
+      id: "8",
+      title: "B.Voc in Artificial Intelligence and Machine Learning",
+      description: "Shape the future with cutting-edge AI and ML technologies",
+      fullDescription: `Dive into the world of artificial intelligence and machine learning, learning to develop intelligent systems and algorithms.
+
+      What you'll learn:
+      - Machine learning algorithms
+      - Neural networks and deep learning
+      - Natural language processing
+      - Computer vision
+      - Robotics and automation
+      - AI ethics and governance`,
+      duration: "3 years",
+      students: 1400,
+      level: "Undergraduate",
+      price: 649,
+      monthlyPrice: 54.08,
+      image: "/placeholder8.svg?height=600&width=800",
+      instructor: "Prof. David Lee",
+      rating: 4.9,
+      totalReviews: 228,
+    },
+    {
+      id: "9",
+      title: "B.Voc in Cybersecurity",
+      description: "Protect digital assets and combat cyber threats",
+      fullDescription: `Learn to safeguard information systems and networks from cyber attacks in this comprehensive cybersecurity program.
+
+      What you'll learn:
+      - Network security
+      - Ethical hacking and penetration testing
+      - Cryptography
+      - Digital forensics
+      - Security policies and risk management
+      - Incident response and recovery`,
+      duration: "3 years",
+      students: 1050,
+      level: "Undergraduate",
+      price: 599,
+      monthlyPrice: 49.92,
+      image: "/placeholder9.svg?height=600&width=800",
+      instructor: "Dr. Lisa Wang",
+      rating: 4.8,
+      totalReviews: 187,
+    },
   ];
 
   const [currentCourseIndex, setCurrentCourseIndex] = useState(0);
@@ -103,90 +241,96 @@ const Courses = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-600 to-blue-800">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-transparent bg-clip-text">
               Skilling to Empower
             </span>
-            <span className="text-gray-700">
+            <span className="text-white">
               {" "}
               and Shaping Futures, Building Skills
             </span>
           </h1>
         </div>
 
-        {/* Course Cards */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {courses.map((course, index) => (
+        {/* Course Cards Slider */}
+        <div className="relative">
+          <div className="overflow-hidden">
             <div
-              key={course.id}
-              className={`relative bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 ${
-                index === currentCourseIndex
-                  ? "ring-2 ring-blue-500 shadow-xl"
-                  : "shadow-lg"
-              }`}
+              className="flex transition-transform duration-300 ease-in-out"
               style={{
-                background: "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
+                transform: `translateX(-${currentCourseIndex * 33.333}%)`,
               }}
             >
-              <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 mb-6">
-                <img
-                  src={course.image}
-                  alt={course.title}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">
-                  {course.title}
-                </h2>
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span>{course.duration}</span>
-                </div>
-                <div className="text-lg font-semibold">
-                  Eligibility: 12th Pass/Equivalent
-                </div>
-                <button
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-xl font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
-                  onClick={() => handleLearnMore(course)}
+              {courses.map((course) => (
+                <div
+                  key={course.id}
+                  className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
                 >
-                  Learn More
-                </button>
-              </div>
+                  <div
+                    className="bg-white rounded-3xl p-8 transition-all duration-500 transform hover:scale-105 shadow-xl"
+                    style={{
+                      background:
+                        "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)",
+                    }}
+                  >
+                    <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 mb-6">
+                      <img
+                        src={course.image}
+                        alt={course.title}
+                        className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="space-y-4">
+                      <h2 className="text-2xl font-bold text-gray-900">
+                        {course.title}
+                      </h2>
+                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <span>{course.duration}</span>
+                      </div>
+                      <div className="text-lg font-semibold">
+                        Eligibility: 12th Pass/Equivalent
+                      </div>
+                      <button
+                        className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-3 px-6 rounded-xl font-medium hover:from-yellow-500 hover:to-orange-600 transition-all duration-300"
+                        onClick={() => handleLearnMore(course)}
+                      >
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
 
-        {/* Navigation Buttons */}
-        <div className="flex justify-center gap-4 mt-8">
+          {/* Navigation Buttons */}
           <button
-            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow"
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow"
             onClick={handlePrevSlide}
             aria-label="Previous course"
           >
-            <FaChevronLeft />
+            <FaChevronLeft className="text-blue-600" />
           </button>
           <button
-            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow"
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow"
             onClick={handleNextSlide}
             aria-label="Next course"
           >
-            <FaChevronRight />
+            <FaChevronRight className="text-blue-600" />
           </button>
         </div>
 
         {/* Footer Text */}
         <div className="text-center mt-16">
           <h2 className="text-4xl font-bold">
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-transparent bg-clip-text">
               Personalization
             </span>
-            <span className="text-gray-700">
-              . Just for them, just from you.
-            </span>
+            <span className="text-white">. Just for them, just from you.</span>
           </h2>
         </div>
       </div>
