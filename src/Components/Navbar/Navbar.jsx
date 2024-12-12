@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#3662c0] text-white font-sans">
+    <nav className="bg-[#1983D3] text-white font-sans">
       <div className="max-w-[1200px] mx-auto px-4">
         {/* Main Navigation */}
         <div className="h-[70px] flex items-center justify-between">
