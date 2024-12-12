@@ -57,7 +57,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-blue-600 overflow-hidden">
+    <div className="relative min-h-screen bg-[#1983D3] overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0 w-full h-full">
         {images.map((image, index) => (
@@ -81,7 +81,7 @@ export default function HomePage() {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center text-white text-center px-4">
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center text-white text-center bg-[#1983D3] px-4">
         <h1 className="text-6xl md:text-8xl font-bold mb-6">
           <span className="text-blue-200">Earn,</span>{" "}
           <span className="text-white">Learn,</span>{" "}
