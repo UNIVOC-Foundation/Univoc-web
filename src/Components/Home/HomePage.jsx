@@ -13,6 +13,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 >>>>>>> 8b6ea73 (Home Page Updated)
 =======
 import { useState, useEffect } from "react";
+<<<<<<< HEAD
 import React from 'react';
 import Student from '../Hero/Student.png';
 import Carrer from '../Hero/Carrer.png';
@@ -22,6 +23,10 @@ import Work from '../Hero/Work.png';
 import Trainee from '../Hero/Trainee.png';
 import Recognized from '../Hero/Recognized.png';
 import Life from '../Hero/Life.png';
+=======
+import Testimonial from "./Testimonial";
+import TrustedPartners from "./TrustedPartners";
+>>>>>>> 01b1422 (add pages)
 
 >>>>>>> da1869c (Update HomePage.jsx)
 
@@ -72,6 +77,7 @@ export default function HomePage() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="relative min-h-screen bg-blue-500 overflow-hidden">
 =======
     <div className="relative min-h-screen bg-[#1a1a1a] overflow-hidden">
@@ -79,6 +85,9 @@ export default function HomePage() {
 =======
     <div className="relative min-h-screen bg-blue-600 overflow-hidden">
 >>>>>>> da1869c (Update HomePage.jsx)
+=======
+    <div className="relative min-h-screen bg-blue-500 overflow-hidden">
+>>>>>>> 2ae4544 (add pages)
       {/* Background Image Slider */}
       <div className="absolute inset-0 w-full h-full">
         {images.map((image, index) => (
@@ -134,11 +143,14 @@ export default function HomePage() {
         </div>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       <Testimonial/>
       <TrustedPartners/>
 
 =======
+=======
+>>>>>>> 2ae4544 (add pages)
       {/*kshitij*/}
       <div>
         {/* Courses & Jobs Section */}
@@ -275,7 +287,16 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+<<<<<<< HEAD
 >>>>>>> da1869c (Update HomePage.jsx)
+=======
+=======
+
+      <Testimonial/>
+      <TrustedPartners/>
+
+>>>>>>> 01b1422 (add pages)
+>>>>>>> 2ae4544 (add pages)
     </div>
    </div>
   );
