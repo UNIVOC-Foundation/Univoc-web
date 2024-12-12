@@ -5,7 +5,7 @@ import student2 from "../../assets/Student2.png";
 const Testimonial = () => {
   //bg-gradient-to-r from-black to-blue-900
   return (
-    <div className="bg-gradient-to-r from-black to-blue-400 text-white p-6 md:p-12">
+    <div className="bg-gradient-to-r from-black to-blue-900 text-white p-6 md:p-12">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Left Section */}
         <div className="flex-1 text-center md:text-left">
@@ -28,7 +28,7 @@ const Testimonial = () => {
             <img
               src={student2}
               alt="Student2"
-              className="w-90 h-[16rem] relative top-6 left-14"
+              className="w-90 h-60 -mx-10"
             />
             <img
               src={student1}
