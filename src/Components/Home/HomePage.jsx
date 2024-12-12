@@ -1,6 +1,8 @@
-"use client";
+//"use client";
 
 import { useState, useEffect } from "react";
+import Testimonial from "./Testimonial";
+import TrustedPartners from "./TrustedPartners";
 
 
 export default function HomePage() {
@@ -48,7 +50,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-blue-600 overflow-hidden">
+    <div className="relative min-h-screen bg-blue-500 overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0 w-full h-full">
         {images.map((image, index) => (
@@ -103,6 +105,10 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+
+      <Testimonial/>
+      <TrustedPartners/>
+
     </div>
   );
 }

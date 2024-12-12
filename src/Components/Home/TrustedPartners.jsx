@@ -1,45 +1,56 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
 
 const logos = [
-  { id: 1, src: "https://i.pinimg.com/originals/20/3d/8e/203d8e6de718b5a5f34295533e6f808b.png", alt: "Adani" },
-  { id: 2, src: "https://media.licdn.com/dms/image/v2/C4E0BAQHvBxRWTG8LHw/company-logo_200_200/company-logo_200_200/0/1630614472121?e=2147483647&v=beta&t=Qtn5Y3DFTvUplZm_mYW4wIK1p3T5eyYZiGJpPlgTam0", alt: "Elin" },
-  { id: 3, src: "https://cdn.siasat.com/wp-content/uploads/2022/01/boAt.jpg", alt: "Dixon" },
-  { id: 4, src: "https://www.equitybulls.com/equitybullsadmin/uploads/Subros%20Limited%203.jpg", alt: "Subros" },
-  { id: 5, src: "https://swarajya.gumlet.io/swarajya/2020-09/4ade7640-dae8-4a20-bb03-5a4d13babaa6/10x1210ibn534moto.jpg?w=610&q=50&compress=true&format=auto", alt: "NSDC" },
-  { id: 11, src: "https://i.pinimg.com/originals/20/3d/8e/203d8e6de718b5a5f34295533e6f808b.png", alt: "Adani" },
-  { id: 12, src: "https://media.licdn.com/dms/image/v2/C4E0BAQHvBxRWTG8LHw/company-logo_200_200/company-logo_200_200/0/1630614472121?e=2147483647&v=beta&t=Qtn5Y3DFTvUplZm_mYW4wIK1p3T5eyYZiGJpPlgTam0", alt: "Elin" },
-  
-  { id: 6 , src: "https://play-lh.googleusercontent.com/N4rkYSD8mo3vlpgVFBbmpeMAXbHSxdWxzo1aZ9eb3xcK3YIXV-gWfH0RlkdkWCyjUQ", alt: "Partner 6" },
+  'https://th.bing.com/th?id=OIP.fU_lTenVatF88-JiD0zaAgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2',
+  'https://th.bing.com/th/id/OIP.49TFG17ev6qlRjmca4c4OwEsEn?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+  'https://s3-symbol-logo.tradingview.com/elin-electronics-ltd--600.png',
+  'https://assets.upstox.com/content/dam/aem-content-integration/assets/images/logos/SUBROS/square_SUBROS_com.png',
+  'https://rplrfp.nsdcindia.org/Images/MRIGS_Logo.png',
+  'https://th.bing.com/th/id/OIP.49TFG17ev6qlRjmca4c4OwEsEn?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+  'https://s3-symbol-logo.tradingview.com/elin-electronics-ltd--600.png',
+  'https://assets.upstox.com/content/dam/aem-content-integration/assets/images/logos/SUBROS/square_SUBROS_com.png',
+  'https://rplrfp.nsdcindia.org/Images/MRIGS_Logo.png'
 ];
 
 const TrustedPartners = () => {
   return (
-    <div className="bg-white py-10 ">
-      <h2 className="text-center text-3xl font-bold text-blue-600 mb-8">
-        Trusted <span className="text-black">Partners</span>
-      </h2>
-      <div className="relative overflow-show">
-        {/* Animation Wrapper */}
-        <motion.div
-          className="flex space-x-8 animate-slide"
-          initial={{ x: "100%" }}
-          animate={{ x: "-100%" }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+    <div className="max-w-full mx-auto min-h-screen relative w-full h-64 overflow-hidden bg-gray-100">
+      <h1 className='text-sky-600 text-4xl text-center font-bold relative top-18'>TRUSTED <span className='font-thin text-gray-600 italic'>Partners</span></h1>
+      {/* Zigzag Line */}
+      <div className="relative top-48 h-56 overflow-hidden">
+        <svg
+          className="absolute w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 800 200"
+          preserveAspectRatio="none"
         >
-          {logos.map((logo) => (
-            <motion.div
-              key={logo.id}
-              className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white rounded-full border-2 border-blue-600 p-2 hover:scale-110 transition-all"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="w-full h-full object-contain"
-              />
-            </motion.div>
-          ))}
-        </motion.div>
+          <path
+            d="
+        M0,100 
+        Q50,20 100,100 
+        Q150,180 200,100 
+        Q250,20 300,100 
+        Q350,180 400,100 
+        Q450,20 500,100 
+        Q550,180 600,100 
+        Q650,20 700,100 
+        Q750,180 800,100"
+            fill="none"
+            stroke="#0284C7"
+            strokeWidth="5"
+          />
+        </svg>
+      </div>
+      {/* Moving Logos */}
+      <div className="flex items-center  w-full animate-moveLogos ">
+        {logos.map((logo, index) => (
+          <img
+            key={index}
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            className="w-40 h-40  rounded-full animate-hoverZigzag  mx-16 border-2 border-sky-600  "
+          />
+        ))}
       </div>
     </div>
   );
