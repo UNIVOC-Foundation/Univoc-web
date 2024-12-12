@@ -42,7 +42,7 @@ const TrustedPartners = () => {
         </svg>
       </div>
       {/* Moving Logos */}
-      <div className="flex items-center  w-full animate-moveLogos ">
+      <div className="flex items-center  w-full animate-moveLogos animate-fadeIn ">
         {logos.map((logo, index) => (
           <img
             key={index}
