@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex max-w-7xl mx-auto">
         <div className=" max-w-[20%]  mb-4 mx-4">
           <h3 className='font-bold text-2xl'>UNIVOC</h3>
-          <p className='text-gray-400 text-xs italic'>Skilling to empower</p>
+          <p className='text-gray-300 text-xs italic'>Skilling to empower</p>
         </div>
         <div className="text-gray-400 text-xs max-w-[80%] mx-4">
           <h2>"Empowering individuals with the skills to thrive in a changing world.</h2>
