@@ -28,7 +28,7 @@ const Testimonial = () => {
             <img
               src={student2}
               alt="Student2"
-              className="w-90 h-60 -mx-10"
+              className="w-90 h-60 -mx-11"
             />
             <img
               src={student1}
