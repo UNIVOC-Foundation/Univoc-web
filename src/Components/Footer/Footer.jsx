@@ -5,7 +5,7 @@ import {Mail } from 'lucide-react';
 import { VscLocation } from "react-icons/vsc";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-black text-white py-8">
       <div className="flex max-w-7xl mx-auto">
         <div className=" max-w-[20%]  mb-4 mx-4">
           <h3 className='font-bold text-2xl'>UNIVOC</h3>

@@ -2,6 +2,8 @@ import React from "react";
 import student from "../../assets/Student.png";
 import student1 from "../../assets/Student1.png";
 import student2 from "../../assets/Student2.png";
+import student3 from "../../assets/Student3.png";
+
 const Testimonial = () => {
   //bg-gradient-to-r from-black to-blue-900
   return (
@@ -16,10 +18,39 @@ const Testimonial = () => {
             <span className="font-bold text-blue-400">Guarantee Placement</span>{" "}
             of all students from first year onwards.
           </p>
-  
-          <button className="bg-blue-600 hover:bg-blue-600 text-white py-2 px-6 rounded shadow-lg active:bg-fuchsia-500 cursor-pointer">
-           <a href="#">Apply Now </a>
-          </button>
+          <div className="flex space-x-4">
+  {/* Button 1: Adani Group Logo */}
+  <button className="flex items-center  hover:bg-blue-700 text-white py-2 px-6 rounded shadow-lg active:bg-fuchsia-500 cursor-pointer">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png"
+      alt="Adani Group Logo"
+      className="w-6 h-6 mr-2"
+    />
+    <a href="#" className="no-underline text-white">
+    Adani
+    </a>
+  </button>
+
+  {/* Button 2: Dixon Logo */}
+  <button className="flex items-center hover:bg-blue-700 text-white py-2 px-6 full-rounded shadow-lg active:bg-fuchsia-500 cursor-pointer">
+    <img
+      src="https://media.licdn.com/dms/image/v2/C560BAQFD_5U0VD-ycQ/company-logo_200_200/company-logo_200_200/0/1630473927375/dixoninfo_logo?e=2147483647&v=beta&t=yA8lIfpVPlRck75Cr09DW4OPmBiGIwtjJ_gd-oADHYo"
+      alt="Dixon Logo"
+      className="w-3 h-3 mr-2 rounded-sm"
+    />
+    <a href="#" className="no-underline text-white">
+      Dixon
+    </a>
+  </button>
+
+  {/* Button 3: Default */}
+  <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded shadow-lg active:bg-fuchsia-500 cursor-pointer">
+    <a href="#" className="no-underline text-white">
+      Apply Now
+    </a>
+  </button>
+</div>
+
         </div>
         {/* Right Section */}
         <div className="relative flex-1  ">
@@ -28,11 +59,11 @@ const Testimonial = () => {
             <img
               src={student2}
               alt="Student2"
-              className="w-90 h-60 -mx-11"
+              className="w-90 h-60 -mx-11 my-5"
             />
             <img
-              src={student1}
-              alt="Student1"
+              src={student3}
+              alt="Student3"
               className="w-90 h-60 "
             />
             <img
@@ -43,7 +74,7 @@ const Testimonial = () => {
              <img
               src={student1}
               alt="Student1"
-              className="w-90 h-60 "
+              className="w-90 h-72 -my-10"
             />
             
           </div>
