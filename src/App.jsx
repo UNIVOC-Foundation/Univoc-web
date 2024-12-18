@@ -2,12 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Courses from "./Components/Courses";
+import Courses from "./Components/Courses/Courses";
 import Contact from "./Components/Contact";
 import Login from "./Components/Login";
 import HomePage from "./Components/Home/HomePage";
 import Signup from "./Components/Signup";
-
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +21,8 @@ function App() {
         <Route path="/Signup" element={<Signup></Signup>} />
         <Route path="/HomePage" element={<HomePage></HomePage>} />
       </Routes>
+     
+      <Footer/>
     </BrowserRouter>
   );
 }
