@@ -10,6 +10,8 @@ import Work from '../Hero/Work.png';
 import Trainee from '../Hero/Trainee.png';
 import Recognized from '../Hero/Recognized.png';
 import Life from '../Hero/Life.png';
+import Testimonial from '../Hero/Testimonial.png';
+import '../Hero/Applynow.css';
 
 
 export default function HomePage() {
@@ -197,20 +199,58 @@ export default function HomePage() {
         <section className="py-8 bg-gradient-to-b from-[#DFF3FF] via-[#F8FCFF] to-[#E8F5FF]">
           <div className="bg-transparent rounded-lg py-12 px-4 shadow-md">
             {/* Why Choose Us Heading with Custom Styles */}
-            <h2
-              className="text-center mb-8 text-[#066BB4]"
-              style={{
-                fontFamily: 'Agbalumo',
-                fontSize: '100px',
-                fontWeight: '900',
-                lineHeight: '183.6px',
-                textAlign: 'center',
-                textUnderlinePosition: 'from-font',
-                textDecorationSkipInk: 'none',
-              }}
-            >
-              Why Thousand Students Choose Us Every Day ?
-            </h2>
+  <h2 className="text-center mb-8 text-[#066BB4]" >
+  <h2 className="text-blue">
+  <span className="font-agbalumo">Why</span>{' '}
+  <span className="font-agbalumo">Thousand</span>{' '}
+  <span className="font-caveat">
+    Studen
+    <span className="relative inline-block" style={{ marginBottom: '0px' }}>
+      t
+      {/* SVG positioned directly under the second 'T' */}
+      <svg
+        width="91"
+        height="45"
+        viewBox="0 0 91 45"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-0"
+        style={{ left: '25px',top: '110px' }}
+      >
+        <path
+          d="M61.5621 8.72766C80.4563 -10.8983 101.446 26.34 76.7597 34.7872C52.073 43.2344 36.429 5.87381 15.1371 8.30607C-6.15474 10.7383 -0.903731 58.6081 31.5833 35.7536"
+          stroke="url(#paint0_linear_2919_2837)"
+          strokeWidth="4.39197"
+          strokeLinecap="round"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_2919_2837"
+            x1="2.37233"
+            y1="26.4207"
+            x2="87.9021"
+            y2="18.4817"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#007EDB" />
+            <stop offset="0.5" stopColor="#F9FCFD" />
+            <stop offset="1" stopColor="#4E4E4E" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </span>
+  </span>
+
+      <span className="font-agbalumo">Choose</span>{' '}
+      <span className="font-agbalumo">Us</span>{' '}
+      <span className="font-agbalumo">Every</span>{' '}
+      <span className="font-agbalumo">Day?</span>
+    </h2>
+  </h2>
+    
+  <div className="flex justify-center mt-4">
+            <div className="bg-transparent rounded-lg py-12 px-4 shadow-md"></div>
+    </div>
   
             {/* Updated Feature Cards with images inline in the grid */}
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -249,7 +289,11 @@ export default function HomePage() {
           </div>
         </section>
     </div>
+    <div className="testimonial-section">
+      <img src={Testimonial} alt="Testimonial" className="testimonial-image" />
+   <button className="apply-now">Apply now </button>
    </div>
+ </div>
   );
 } 
   
