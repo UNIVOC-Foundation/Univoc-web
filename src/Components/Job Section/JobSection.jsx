@@ -2,6 +2,20 @@ import React from 'react';
 import { MapPin, Briefcase, Star, Upload, LineChart, BarChart2, User } from 'lucide-react';
 
 export default function JobSection() {
+  const companies = [
+    { name: 'Adani', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'ZFW', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'Subros', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'BHEL', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'Global', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'Analytics', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'TPRC', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'Mahindra', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'NIIL', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'AK', logo: '/placeholder.svg?height=80&width=80' },
+    { name: 'Police', logo: '/placeholder.svg?height=80&width=80' }
+  ];
+
   return (
     <div className="min-h-screen bg-[linear-gradient(148.05deg,#C6D5F6_0%,#EAF0FF_48.94%,#DEE8FF_97.87%)] px-4 py-12 font-sans">
       <div className="container mx-auto max-w-6xl">
@@ -138,14 +152,66 @@ export default function JobSection() {
           </div>
         </div>
 
-        {/* Portal Heading */}
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold">
+        {/* Portal Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             India's Largest <span className="text-[#0088FF]">Job Portal</span>
           </h2>
+          <p className="text-xl text-gray-600 mb-12">
+            Connecting Millions Of Job Seekers With Top Employers Every Day
+          </p>
+        </div>
+
+        {/* Hire/Get Job Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+          {/* Hire Now Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="flex flex-wrap gap-4 justify-center mb-6">
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+            </div>
+            <button className="w-full py-3 bg-[#0088FF] text-white rounded-xl font-semibold hover:bg-[#0077ee] transition-colors">
+              Hire Now
+            </button>
+          </div>
+
+          {/* Get a Job Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="flex flex-wrap gap-4 justify-center mb-6">
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-20 h-20 rounded-full" />
+            </div>
+            <button className="w-full py-3 bg-[#0088FF] text-white rounded-xl font-semibold hover:bg-[#0077ee] transition-colors">
+              Get a Job
+            </button>
+          </div>
+        </div>
+
+        {/* Let's Start Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4">
+            Lets <span className="text-[#0088FF]">Start</span>
+          </h2>
+          <div className="w-24 h-1 bg-[#0088FF] mx-auto mb-12"></div>
+        </div>
+
+        {/* Company Logos */}
+        <div className="flex flex-wrap justify-center gap-8 items-center">
+          {companies.map((company, index) => (
+            <div key={index} className="w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center p-4">
+              <img
+                src={company.logo}
+                alt={company.name}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
-
