@@ -41,7 +41,7 @@ export default function Navbar() {
               </Link>
             </div>
             <div className="relative group">
-              <Link to="/jobsection" className="text-white hover:text-gray-200 font-medium flex items-center">
+              <Link to="/JobSection" className="text-white hover:text-gray-200 font-medium flex items-center">
                 JOB <ChevronDown className="ml-1 w-4 h-4" />
               </Link>
             </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
               <Link to="/courses" className="text-blue-600 hover:text-blue-800 font-medium">
                 COURSES
               </Link>
-              <Link to="/jobsection" className="text-blue-600 hover:text-blue-800 font-medium">
+              <Link to="/JobSection" className="text-blue-600 hover:text-blue-800 font-medium">
                 JOB
               </Link>
               <Link to="/Contact" className="text-blue-600 hover:text-blue-800 font-medium">
