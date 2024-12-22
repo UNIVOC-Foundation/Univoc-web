@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import logo2 from "../../assets/logo.png"
+import logo2 from "../images/logo.png";
 import { CiMail } from "react-icons/ci";
 import { LuMapPin } from "react-icons/lu";
 import { BsTwitterX } from "react-icons/bs";

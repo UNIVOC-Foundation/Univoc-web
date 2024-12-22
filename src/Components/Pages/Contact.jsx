@@ -1,8 +1,6 @@
-
-
 const Contact = () => {
   return (
-    <div className="bg-[url('./assets/Frame7.png')] bg-cover bg-center text-white p-8 flex flex-col lg:flex-row items-center justify-between">
+    <div className="bg-[url('./images/Frame7.png')] bg-cover bg-center text-white p-8 flex flex-col lg:flex-row items-center justify-between">
       <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0">
         <h2 className="text-3xl font-bold mb-2">Have More Questions?</h2>
         <p className="mb-2">
@@ -70,7 +68,11 @@ const Contact = () => {
               placeholder="City*"
             />
           </div>
-          <select className="w-full mb-4 p-2 border text-gray-500 rounded" defaultValue="" placeholder="Select School Name">
+          <select
+            className="w-full mb-4 p-2 border text-gray-500 rounded"
+            defaultValue=""
+            placeholder="Select School Name"
+          >
             <option value="" disabled>
               Select School Name
             </option>
