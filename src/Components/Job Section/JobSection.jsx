@@ -4,18 +4,32 @@ import JobCategories from "./JobCategories";
 import EmployerSection from "./EmployeeSection";
 
 export default function JobSection() {
+  // const companies = [
+  //   '/logos/logo1.png', // Local logo 1
+  //    '/logos/logo2.png', // Local logo 2
+  //    '/logos/logo3.png', // Local logo 3
+  //    '/logos/logo4.png', // Local logo 4
+  //    '/logos/logo5.png', // Local logo 5
+  //    '/logos/logo6.png', // Local logo 6
+  //    '/logos/logo7.png', // Local logo 7
+  //    '/logos/logo8.png', // Local logo 8
+  //    '/logos/logo9.png', // Local logo 6
+  //    '/logos/logo10.png', // Local logo 7
+  //    '/logos/logo11.png', // Local logo 8
+  //    '/logos/logo12.png', // Local logo 8
+  //  ];
   const companies = [
-    { name: "Adani", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "ZFW", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "Subros", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "BHEL", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "Global", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "Analytics", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "TPRC", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "Mahindra", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "NIIL", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "AK", logo: "/placeholder.svg?height=80&width=80" },
-    { name: "Police", logo: "/placeholder.svg?height=80&width=80" }
+    { name: "Adani", logo: '/logos/logo1.png' },
+    { name: "ZFW", logo: "/logos/logo2.png?height=80&width=80 cover" },
+    { name: "Subros", logo: "/logos/logo3.png?height=80&width=80" },
+    { name: "BHEL", logo: "/logos/logo4.png?height=80&width=80" },
+    { name: "Global", logo: "/logos/logo5.png?height=80&width=80" },
+    { name: "Analytics", logo: "/logos/logo6.png?height=80&width=80" },
+    { name: "TPRC", logo: "/logos/logo7.png?height=80&width=80" },
+    { name: "Mahindra", logo: "/logos/logo8.png?height=80&width=80" },
+    { name: "NIIL", logo: "/logos/logo9.png?height=80&width=80" },
+    { name: "AK", logo: "/logos/logo10.png?" },
+   // { name: "Police", logo: "/logos/logo12.png?height=80&width=80" }
   ];
 
   return (
@@ -209,11 +223,11 @@ export default function JobSection() {
           </div>
 
           {/* Company Logos */}
-          <div className="flex flex-wrap justify-center gap-8 items-center mb-20">
+          <div className="flex flex-wrap justify-center gap-5 items-center mb-20">
             {companies.map((company, index) => (
               <div
                 key={index}
-                className="w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center p-4"
+                className="w-24 h-24 bg-white rounded-full shadow-md flex items-center justify-center p-1"
               >
                 <img
                   src={company.logo}
