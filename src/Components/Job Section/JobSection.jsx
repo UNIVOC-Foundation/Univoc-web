@@ -201,7 +201,7 @@ export default function JobSection() {
           </div>
 
           {/* Let's Start Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16  ">
             <h2 className="text-3xl font-bold mb-4">
               Lets <span className="text-[#0088FF]">Start</span>
             </h2>

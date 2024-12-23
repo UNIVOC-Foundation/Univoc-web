@@ -19,7 +19,7 @@ const JobCategories = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
+    <div className="   bg-[linear-gradient(148.05deg,#C6D5F6_0%,#EAF0FF_48.94%,#DEE8FF_97.87%)] grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
       {categories.map((category, index) => (
         <div
           key={index}
