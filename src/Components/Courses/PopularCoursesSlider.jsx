@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+//import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const courses = [
   {
@@ -107,9 +108,9 @@ const PopularCoursesSlider = () => {
 
       {/* Swiper Slider */}
       <Swiper
-        navigation={true}
-        modules={[Navigation]}
-        spaceBetween={30}
+       navigation={true}
+         modules={[Navigation]}
+        spaceBetween={25}
         slidesPerView={1.5}
         breakpoints={{
           768: { slidesPerView: 2 },
