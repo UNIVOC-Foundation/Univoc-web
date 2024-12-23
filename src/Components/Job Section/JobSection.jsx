@@ -19,16 +19,16 @@ export default function JobSection() {
   //    '/logos/logo12.png', // Local logo 8
   //  ];
   const companies = [
-    { name: "Adani", logo: '/logos/logo1.png' },
-    { name: "ZFW", logo: "/logos/logo2.png?height=80&width=80 cover" },
-    { name: "Subros", logo: "/logos/logo3.png?height=80&width=80" },
-    { name: "BHEL", logo: "/logos/logo4.png?height=80&width=80" },
-    { name: "Global", logo: "/logos/logo5.png?height=80&width=80" },
-    { name: "Analytics", logo: "/logos/logo6.png?height=80&width=80" },
-    { name: "TPRC", logo: "/logos/logo7.png?height=80&width=80" },
-    { name: "Mahindra", logo: "/logos/logo8.png?height=80&width=80" },
-    { name: "NIIL", logo: "/logos/logo9.png?height=80&width=80" },
-    { name: "AK", logo: "/logos/logo10.png?" },
+    { name: "Dixon", logo: '/logos/logo1.png' },
+    { name: "Capro", logo: "/logos/logo2.png?height=80&width=80 cover" },
+    { name: "MIcro-Terner", logo: "/logos/logo3.png?height=80&width=80" },
+    { name: "Neelam University", logo: "/logos/logo4.png?height=80&width=80" },
+    { name: "Elin", logo: "/logos/logo5.png?height=80&width=80" },
+    { name: "Adani", logo: "/logos/logo6.png?height=80&width=80" },
+    { name: "ISTIL", logo: "/logos/logo7.png?height=80&width=80" },
+    { name: "NSDC", logo: "/logos/logo8.png?height=80&width=80" },
+    { name: "AK", logo: "/logos/logo9.png?height=80&width=80" },
+    { name: "Subros", logo: "/logos/logo10.png?" },
    // { name: "Police", logo: "/logos/logo12.png?height=80&width=80" }
   ];
 
