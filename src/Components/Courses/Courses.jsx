@@ -1,8 +1,10 @@
 import React from "react";
+import PopularCoursesSlider from "./PopularCoursesSlider";
 //import Courses from '../Courses1';
 
 const Courses = () => {
   return (
+    <>
     <div className="w-full min-h-screen bg-blue-50 px-4 md:px-20 py-10 grid place-items-center">
       {/* Header */}
       <div className="text-center mb-8">
@@ -102,9 +104,10 @@ const Courses = () => {
         </div>
       </div>
       </div>
-
       </div>
     </div>
+<PopularCoursesSlider/>
+    </>
   );
 };
 
