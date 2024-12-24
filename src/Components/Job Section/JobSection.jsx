@@ -4,20 +4,7 @@ import JobCategories from "./JobCategories";
 import EmployerSection from "./EmployeeSection";
 
 export default function JobSection() {
-  // const companies = [
-  //   '/logos/logo1.png', // Local logo 1
-  //    '/logos/logo2.png', // Local logo 2
-  //    '/logos/logo3.png', // Local logo 3
-  //    '/logos/logo4.png', // Local logo 4
-  //    '/logos/logo5.png', // Local logo 5
-  //    '/logos/logo6.png', // Local logo 6
-  //    '/logos/logo7.png', // Local logo 7
-  //    '/logos/logo8.png', // Local logo 8
-  //    '/logos/logo9.png', // Local logo 6
-  //    '/logos/logo10.png', // Local logo 7
-  //    '/logos/logo11.png', // Local logo 8
-  //    '/logos/logo12.png', // Local logo 8
-  //  ];
+  
   const companies = [
     { name: "Dixon", logo: '/logos/logo1.png' },
     { name: "Capro", logo: "/logos/logo2.png?height=80&width=80 cover" },

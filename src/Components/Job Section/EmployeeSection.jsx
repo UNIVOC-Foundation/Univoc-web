@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaUserTie, FaUsers, FaGlobeAmericas, FaCheckCircle, FaStar, FaDollarSign } from 'react-icons/fa';
+import interested from "../../assets/interested.png";
+import ellipse from "../../assets/ellipse.png";
+import vector from "../../assets/vector.png";
 
 export default function EmployerSection() {
   return (
@@ -83,21 +86,36 @@ export default function EmployerSection() {
         </div>
       </div>
       <br/>
+
       {/* For Interested Students Section */}
 <section className="bg-blue-50 py-10">
   <div className="max-w-7xl mx-auto px-6 md:px-10">
-    <h2 className="text-3xl font-semibold text-blue-900 text-center">
+    <h2 className="text-3xl font-semibold text-blue-900 text-left">
       For Interested <span className="text-blue-500">Students</span>
     </h2>
     <div className="flex flex-col md:flex-row items-center justify-between mt-8 gap-8">
       {/* Left Side Illustration */}
-      <div className="w-full md:w-1/2 flex justify-center">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1661602346960-dcb7b9b99779?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBzdHVkZW50c3xlbnwwfHwwfHx8MA%3D%3D/300*200"
-          alt="Student working illustration"
-          className="rounded-lg shadow-md max-w-full h-auto"
-        />
-      </div>
+<div className="relative w-full md:w-1/2 flex justify-center items-center">
+  {/* Background Elements */}
+  <img
+    src={ellipse}
+    alt="Background Ellipse"
+    className="absolute top-0 left-0 w-full max-w-lg opacity-20"
+  />
+  <img
+    src={vector}
+    alt="Background Vector"
+    className="absolute bottom-0 right-0 w-full max-w-lg opacity-30"
+  />
+
+  {/* Main Illustration */}
+  <img
+    src={interested}
+    alt="Student working illustration"
+    className="relative z-10 max-w-full h-auto"
+  />
+</div>
+
 
       {/* Right Side Content */}
       <div className="mt-6 md:mt-0 md:w-1/2 md:pl-10 flex flex-col justify-center">
@@ -118,7 +136,6 @@ export default function EmployerSection() {
     </div>
   </div>
 </section>
-
     </div>
   );
 }
